@@ -2,6 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Todo from './Todo'
 
+// 追加されたtodoをリストアップする
+// liの部分はtodoで実装する
 const TodoList = ({ todos, onTodoClick }) => (
   <ul>
     {todos.map(todo =>
