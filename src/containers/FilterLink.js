@@ -2,6 +2,7 @@ import { connect } from 'react-redux'
 import { setVisibilityFilter } from '../actions'
 import Link from '../components/Link'
 
+// タスクのフィルタリングのロジック実装
 const mapStateToProps = (state, ownProps) => ({
   active: ownProps.filter === state.visibilityFilter
 })
