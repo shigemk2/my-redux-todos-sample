@@ -1,5 +1,9 @@
 // todoを
 const todo = (state, action) => {
+  console.log("state");
+  console.log(state);
+  console.log("action");
+  console.log(action);
   switch (action.type) {
     case 'ADD_TODO':
       return {
