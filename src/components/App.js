@@ -3,6 +3,7 @@ import Footer from './Footer'
 import AddTodo from '../containers/AddTodo'
 import VisibleTodoList from '../containers/VisibleTodoList'
 
+// ビューの部分。AddTodo/VisibleTodoList/Footerで実装を分離する
 const App = () => (
   <div>
     <AddTodo />
