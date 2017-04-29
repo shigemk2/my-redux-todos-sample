@@ -7,7 +7,7 @@ npm install
 npm start
 ```
 
-- action stateを変更するためのメッセージ
+- action stateを変更するためのメッセージ Actionsはアプリからstoreにデータを送る情報のペイロード。storeに対する唯一のソース
 - component コンポーネント
 - container 機能
 - reducer stateに命令する
