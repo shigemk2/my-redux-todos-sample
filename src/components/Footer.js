@@ -1,6 +1,7 @@
 import React from 'react'
 import FilterLink from '../containers/FilterLink'
 
+// HTMLの部分はやっぱりここで実装する
 // フッターの実装
 // 独自実装の実装でFilterLinkはReducerにある
 const Footer = () => (
