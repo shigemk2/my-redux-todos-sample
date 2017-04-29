@@ -2,15 +2,17 @@ import { connect } from 'react-redux'
 import { toggleTodo } from '../actions'
 import TodoList from '../components/TodoList'
 
+// todoのリストを見る
 const getVisibleTodos = (todos, filter) => {
   switch (filter) {
+    // 全部
     case 'SHOW_ALL':
       return todos
-    case 'SHOW_COMPLETED':
+    case 'SHOW_COMPLETED': // 完了したやつ
       return todos.filter(t => t.completed)
-    case 'SHOW_ACTIVE':
+    case 'SHOW_ACTIVE': // 完了していないやつ
       return todos.filter(t => !t.completed)
-    default:
+    default: // どれでもなかったらエラー
       throw new Error('Unknown filter: ' + filter)
   }
 }
@@ -23,6 +25,7 @@ const mapDispatchToProps = {
   onTodoClick: toggleTodo
 }
 
+// connectでバインドする
 const VisibleTodoList = connect(
   mapStateToProps,
   mapDispatchToProps
