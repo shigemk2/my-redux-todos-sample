@@ -1,6 +1,8 @@
 import React from 'react'
 import FilterLink from '../containers/FilterLink'
 
+// フッターの実装
+// 独自実装の実装でFilterLinkはReducerにある
 const Footer = () => (
   <p>
     Show:
