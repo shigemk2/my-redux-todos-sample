@@ -2,6 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { addTodo } from '../actions'
 
+// ビューの部分の実装。connectで実際に使えるようにする
 let AddTodo = ({ dispatch }) => {
   let input
 
