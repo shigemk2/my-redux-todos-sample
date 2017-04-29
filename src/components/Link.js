@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+// フィルタリングしたい部分のHTML実装
 const Link = ({ active, children, onClick }) => {
   if (active) {
-    console.log({children})
     return <span>{children}</span>
   }
 
